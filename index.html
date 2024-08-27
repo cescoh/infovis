@@ -2,23 +2,28 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TP - Visualización de información</title>
   <style>
     body {
       display: flex;
       justify-content: center;
       align-items: center;
-      font-family: Arial, sans-serif;
+      min-height: 100vh;
       margin: 0;
       padding: 0;
       background-color: #f4f4f4;
       color: #333;
     }
 
-    h1 {
+    .container {
       text-align: center;
-      font-size: 36px;
+      width: 90%;
+      max-width: 1200px;
+    }
+
+    h1 {
+      font-size: 2.5em;
       font-weight: bold;
       color: #444;
       padding: 20px;
@@ -29,14 +34,18 @@
     }
 
     iframe {
-      display: block;
-      margin: 0 auto;
+      width: 100%;
+      height: 476px;
+      border: none;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
   </style>
 </head>
 <body>
-  <h1>TP - Visualización de información</h1>
-  <iframe width="100%" height="476" frameborder="0" src="https://observablehq.com/embed/c5920e2d0e2dc715@172?cells=chart"></iframe>
+  <div class="container">
+    <h1>TP - Visualización de información</h1>
+    <iframe src="https://observablehq.com/embed/c5920e2d0e2dc715@172?cells=chart"></iframe>
+  </div>
 </body>
 </html>
+
